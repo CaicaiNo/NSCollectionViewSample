@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="view" destination="Udb-bi-5zA" id="Bla-di-A7o"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="Udb-bi-5zA">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TH6-3e-HlJ">
+                    <rect key="frame" x="20" y="80" width="261" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="JpU-W5-bYf"/>
+                    </constraints>
+                    <buttonCell key="cell" type="square" title="Sample one" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hBH-oj-J77">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="sampleOne:" target="-2" id="nt0-1H-Lub"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="chM-I3-vVe">
+                    <rect key="frame" x="20" y="20" width="261" height="40"/>
+                    <buttonCell key="cell" type="square" title="Sample two" bezelStyle="shadowlessSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bvu-yG-1Me">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="sampleTwo:" target="-2" id="0yu-dm-2Ld"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="chM-I3-vVe" firstAttribute="top" secondItem="TH6-3e-HlJ" secondAttribute="bottom" constant="20" id="6BC-In-ANO"/>
+                <constraint firstItem="chM-I3-vVe" firstAttribute="height" secondItem="TH6-3e-HlJ" secondAttribute="height" id="IcU-Ep-LTW"/>
+                <constraint firstItem="chM-I3-vVe" firstAttribute="width" secondItem="TH6-3e-HlJ" secondAttribute="width" id="ZaO-Hc-8gY"/>
+                <constraint firstAttribute="bottom" secondItem="chM-I3-vVe" secondAttribute="bottom" constant="20" id="Zbq-Sf-5E6"/>
+                <constraint firstItem="chM-I3-vVe" firstAttribute="centerX" secondItem="Udb-bi-5zA" secondAttribute="centerX" id="fR9-Z9-hQ8"/>
+                <constraint firstItem="TH6-3e-HlJ" firstAttribute="centerX" secondItem="Udb-bi-5zA" secondAttribute="centerX" id="jrF-e5-NZ2"/>
+                <constraint firstItem="TH6-3e-HlJ" firstAttribute="leading" secondItem="Udb-bi-5zA" secondAttribute="leading" constant="20" id="kVF-3e-VDb"/>
+                <constraint firstAttribute="trailing" secondItem="TH6-3e-HlJ" secondAttribute="trailing" constant="20" id="qVO-RJ-udN"/>
+                <constraint firstItem="TH6-3e-HlJ" firstAttribute="top" secondItem="Udb-bi-5zA" secondAttribute="top" constant="20" id="sjZ-wI-Hb8"/>
+            </constraints>
+            <point key="canvasLocation" x="-22.5" y="143"/>
+        </view>
+    </objects>
+</document>
